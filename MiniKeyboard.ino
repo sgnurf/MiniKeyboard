@@ -74,7 +74,7 @@ void scanForKeyPresses()
 }
 
 void pressKey(int row, int column) {
-    Keyboard.set_modifier(MODIFIERKEY_SHIFT);
+    Keyboard.set_modifier(MODIFIERKEY_CTRL | MODIFIERKEY_ALT);
     Keyboard.set_key1(keyMap[row][column]);
     Keyboard.send_now();
 
